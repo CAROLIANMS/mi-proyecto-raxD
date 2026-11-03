@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mi primer Cubo en RA</title>
+    <!-- Cargamos A-Frame -->
+    <script src="https://aframe.io"></script>
+    <!-- Cargamos AR.js para A-Frame -->
+    <script src="https://githack.com"></script>
+  </head>
+  <body style="margin: 0px; overflow: hidden;">
+    <!-- Inicializamos la escena de RA -->
+    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+      
+      <!-- Definimos el marcador Hiro -->
+      <a-marker preset="hiro">
+        <!-- Ponemos un cubo de color azul encima del marcador -->
+        <a-box position="0 0.5 0" material="color: #007bff; opacity: 0.8;" animation="property: rotation; to: 0 360 0; loop: true; dur: 5000"></a-box>
+      </a-marker>
+
+      <!-- Añadimos la cámara (corregida) -->
+      
+    </a-scene>
+  </body>
+</html>
